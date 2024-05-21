@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/txtDataDvizheniya"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:background="@drawable/table_content_cell_bg"
+        android:text="Дата"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/txtVidDvizheniya"
+        android:layout_width="120dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:background="@drawable/table_content_cell_bg"
+        android:text="Движение"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/txtKategoriya"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:background="@drawable/table_content_cell_bg"
+        android:text="Категория"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/txtSumma"
+        android:layout_width="130dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:background="@drawable/table_content_cell_bg"
+        android:text="Сумма"
+        android:textSize="18sp"/>
+
+</LinearLayout>

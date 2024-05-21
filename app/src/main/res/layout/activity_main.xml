@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="64dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="315dp"
+        android:layout_marginTop="625dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="33dp"
+        android:onClick="perehod_na_vvod_dohodov_rashodov"
+        android:text="+"
+        android:textSize="34sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="346dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginEnd="19dp"
+        android:text="Доход: "
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="348dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="517dp"
+        android:text="Расход:"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="377dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="19dp"
+        android:text="Показатели на "
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="222dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="94dp"
+        android:layout_marginTop="234dp"
+        android:layout_marginEnd="95dp"
+        android:layout_marginBottom="342dp"
+        android:onClick="perehod_na_otchet_vse_dvizheniya_sredstv"
+        android:text="Движения средств"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="224dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="92dp"
+        android:layout_marginBottom="179dp"
+        android:onClick="perehod_na_otchet_rashody_po_kategoriyam"
+        android:text="Расходы по категориям"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button5" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="225dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="91dp"
+        android:layout_marginBottom="123dp"
+        android:onClick="perehod_na_otchet_dohody_po_kategoriyam"
+        android:text="Доходы по категориям"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button7" />
+
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="223dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="98dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="90dp"
+        android:layout_marginBottom="65dp"
+        android:onClick="perehod_na_kategorii"
+        android:text="Категории"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button10" />
+
+    <Button
+        android:id="@+id/button16"
+        android:layout_width="131dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="74dp"
+        android:layout_marginEnd="151dp"
+        android:layout_marginBottom="44dp"
+        android:onClick="ob_avtore"
+        android:text="Об авторе"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button13" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="142dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="142dp"
+        android:layout_marginBottom="160dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Цитата дня:"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/button5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="386dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="45dp"
+        android:fontFamily="sans-serif-thin"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/button5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

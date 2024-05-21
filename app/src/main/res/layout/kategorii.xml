@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/button_back_from_kategorii"
+        android:layout_width="66dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="673dp"
+        android:layout_marginEnd="329dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:drawable/ic_menu_revert"
+        android:onClick="perehod_na_nachalny_ekran"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="616dp"
+        android:text="Введите наименование категории"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/button_back_from_kategorii"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextText2"
+        android:layout_width="381dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="543dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/button_back_from_kategorii"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <Button
+        android:id="@+id/button14"
+        android:layout_width="167dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="462dp"
+        android:onClick="dobavit_kategoriyu"
+        android:text="Добавить"
+        app:layout_constraintBottom_toTopOf="@+id/button_back_from_kategorii"
+        app:layout_constraintEnd_toStartOf="@+id/button15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
+
+    <Button
+        android:id="@+id/button15"
+        android:layout_width="171dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="519dp"
+        android:onClick="udalit_kategoriyu"
+        android:text="Удалить"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button14"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
+
+    <ListView
+        android:id="@+id/Listview_kategorii"
+        android:layout_width="396dp"
+        android:layout_height="392dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_back_from_kategorii"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button15" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="335dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="7dp"
+        android:text="Текущий список категорий"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/Listview_kategorii"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button15" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

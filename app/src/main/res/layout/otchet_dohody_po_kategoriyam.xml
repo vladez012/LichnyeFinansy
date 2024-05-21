@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/button_back_from_otchet_dohody_po_kategoriyam"
+        android:layout_width="66dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="662dp"
+        android:layout_marginEnd="329dp"
+        android:layout_marginBottom="27dp"
+        android:background="@android:drawable/ic_menu_revert"
+        android:onClick="perehod_na_nachalny_ekran"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <lecho.lib.hellocharts.view.ColumnChartView
+        android:id="@+id/columnchart1"
+        android:layout_width="369dp"
+        android:layout_height="556dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="71dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="35dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_back_from_otchet_dohody_po_kategoriyam"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="23dp"
+        android:text="Дата:"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/columnchart1"
+        app:layout_constraintEnd_toStartOf="@+id/editTextDate4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextDate4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="114dp"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="date"
+        app:layout_constraintBottom_toTopOf="@+id/columnchart1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView14"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="67dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="14dp"
+        android:background="@android:drawable/ic_menu_today"
+        android:onClick="ustanovit_datu"
+        app:layout_constraintBottom_toTopOf="@+id/columnchart1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editTextDate4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="173dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="27dp"
+        android:onClick="sbrosit_filtr"
+        android:text="Сбросить фильтр"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_back_from_otchet_dohody_po_kategoriyam"
+        app:layout_constraintTop_toBottomOf="@+id/columnchart1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

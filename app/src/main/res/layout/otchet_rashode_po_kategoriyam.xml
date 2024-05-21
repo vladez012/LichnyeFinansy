@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/button_back_from_otchet_rashode_po_kategoriyam"
+        android:layout_width="66dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="662dp"
+        android:layout_marginEnd="329dp"
+        android:layout_marginBottom="27dp"
+        android:background="@android:drawable/ic_menu_revert"
+        android:onClick="perehod_na_nachalny_ekran"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <lecho.lib.hellocharts.view.PieChartView
+        android:id="@+id/piechart1"
+        android:layout_width="373dp"
+        android:layout_height="548dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_back_from_otchet_rashode_po_kategoriyam"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="307dp"
+        android:layout_marginBottom="17dp"
+        android:text="Дата:"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/piechart1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextDate3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="91dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="date"
+        app:layout_constraintBottom_toTopOf="@+id/piechart1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView13"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="64dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="10dp"
+        android:background="@android:drawable/ic_menu_today"
+        android:onClick="ustanovit_datu"
+        app:layout_constraintBottom_toTopOf="@+id/piechart1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editTextDate3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="167dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="147dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="27dp"
+        android:onClick="sbrosit_filtr"
+        android:text="Сбросить фильтр"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_back_from_otchet_rashode_po_kategoriyam"
+        app:layout_constraintTop_toBottomOf="@+id/piechart1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
